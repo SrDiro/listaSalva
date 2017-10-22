@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>lista Salva</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="styles.css" rel="stylesheet" type="text/css"/>
+        <script src="funcionesBotones.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div class="contenedor">
+            <div class="resultados">
+                <p class="valores" id="valores"><b>Valores:</b></p>
+                <p class="tamano" id="tamano"><b>Tamaño:</b></p>
+            </div>
+            <div class="contenedores">            
+                <select id="select1" size="10">
+                    <option id="0" value="DWC"> DWC </option>
+                    <option id="1" value="DWS"> DWS </option>
+                    <option id="2" value="Ingles"> Ingles </option>
+                    <option id="3" value="FOL"> FOL </option> 
+                    <option id="4" value="Despliegue"> Despliegue </option>
+                </select>
+
+                <select id="select2" size="10">
+                </select>
+            </div>
+
+            <div id="botonesMover">
+                <input type="button" id="pasarUno" value=">" onclick="options(this.id)"/>
+                <input type="button" id="pasarTodos" value=">>" />
+                <input type="button" id="volverUno" value="<" />
+                <input type="button" id="volverTodos" value="<<" />
+                <input type="radio" id="copiar" name="opcion" />copiar
+                <input type="radio" id="mover" name="opcion" />mover
+            </div>
+
+            <div class="botones">            
+                <input id="showElement" type="button" value="ver elemento" onclick="showElement()"/>
+                <input id="newElement" type="text" />
+                <input id="addElement" type="button" value="añadir elemento" onclick="addElement()"/>
+                <input id="showLength" type="button" value="tamaño lista" onclick="lengthList()"/>
+                <input id="deleteElement" type="button" value="eliminar elemento" onclick="deleteElement()"/>
+                <input id="deleteAllElements" type="button" value="eliminar todos los elemento" onclick="deleteAllElements()"/>
+            </div>
+        </div>
+    </body>
+</html>
